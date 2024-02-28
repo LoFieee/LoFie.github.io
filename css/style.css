@@ -1,12 +1,32 @@
-.iframe {
-	margin: 0;
+#logo-container {
+	position:sticky;
+	bottom: 800px;
+	right: 100px;
+	transition: transform 0.5s ease;
+  }
+  
+  #logo {
+	width: 130px;
+	height: 100px;
+  }
+  
+  .spinning {
+	transform: rotate(360deg);
+  }
+
+iframe {
+    border: none;
+  }
+
+.amogus {
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-	border: none;
-}
+	text-align: center;
+  }
 
 #preloader {
 	position: fixed;
@@ -81,13 +101,13 @@ h2::before {
 
 .gallery img {
     width: 500px;
-    height: 750px;
+    height: 700px;
     object-fit: cover;
 }
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('font/HelveticaNeue-Black.otf') format('woff2'),
+    src: url('font/HelveticaNeue-Black.otf') format('otf'),
          url('path_to_your_font_file.woff') format('woff');
 } 
 
@@ -181,7 +201,7 @@ html,button,input,select,textarea {
 }
 body {
 	margin:0;
-	font-family: 'Open Sans',sans-serif;
+	font-family: 'Helvetica', sans-serif;
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -292,7 +312,21 @@ nav ul,nav ol {
 img {
 	border:0;
 	-ms-interpolation-mode:bicubic;
+	transition: transform .2s;
 }
+
+img:hover{
+	transform: scale(1.05);
+}
+
+.logo:hover {
+	transform: scale(1.7);
+}
+
+.logo {
+	transition: transform .2s;
+}
+
 svg:not(:root) {
 	overflow: hidden;
 }
