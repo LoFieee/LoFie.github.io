@@ -6,8 +6,8 @@
   }
   
   #logo {
-	width: 130px;
-	height: 100px;
+	width: 210px;
+	height: 140px;
   }
   
   .spinning {
@@ -128,7 +128,6 @@ a {
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 	transition:all 0.5s;
-	border-bottom: 1px dashed;
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
